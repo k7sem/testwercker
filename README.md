@@ -1,2 +1,0 @@
-# testwercker
-for testing Wercker
