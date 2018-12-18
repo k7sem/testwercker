@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.k7.demo1.Demo1ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.595 sec - in com.k7.demo1.Demo1ApplicationTests
