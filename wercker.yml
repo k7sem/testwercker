@@ -2,7 +2,7 @@
 # Docker Hub https://hub.docker.com/_/openjdk/
 # Read more about containers on our dev center
 # https://devcenter.wercker.com/overview-and-core-concepts/containers/
-box: openjdk:8-jdk
+box: maven:latest
 
 # This is the build pipeline. Pipelines are the core of wercker
 # Read more about pipelines on our dev center
@@ -15,5 +15,5 @@ build:
     # https://github.com/wercker/step-maven
     - wercker/maven:
       goals: install
-      cache_repo: true
-      version: 3.5.2
+      #cache_repo: true
+      #version: 3.5.2
