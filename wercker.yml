@@ -17,3 +17,9 @@ build:
       goals: install
       #cache_repo: true
       #version: 3.5.2
+    - internal/docker-push:
+      username: SXSJTTYUNSHU@126.COM
+      password: wv<o6F.[78W>nU<NS;hK
+      tag: my-wercker-tag
+      repository: SXSJTTYUNSHU@126.COM/test1
+      registry: https://iad.ocir.io/v2/
