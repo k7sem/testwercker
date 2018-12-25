@@ -19,7 +19,7 @@ build:
       #version: 3.5.2
     - internal/docker-push:
       username: SXSJTTYUNSHU@126.COM
-      password: wv<o6F.[78W>nU<NS;hK
+      password: N7H&G9$WlWkq7#M
       tag: my-wercker-tag
       repository: SXSJTTYUNSHU@126.COM/yunshu2/test1
       registry: https://iad.ocir.io/v2/
