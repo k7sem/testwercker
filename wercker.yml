@@ -21,5 +21,5 @@ build:
       username: SXSJTTYUNSHU@126.COM
       password: wv<o6F.[78W>nU<NS;hK
       tag: my-wercker-tag
-      repository: SXSJTTYUNSHU@126.COM/test1
+      repository: SXSJTTYUNSHU@126.COM/yunshu2/test1
       registry: https://iad.ocir.io/v2/
