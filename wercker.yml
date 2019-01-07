@@ -53,7 +53,7 @@ deploy-to-kubernetes:
         command: apply -f $WERCKER_OUTPUT_DIR/kubernetes/
 
     # Tell Kubernetes that we're going to wait 60 seconds for the deploy to be successful
-     - kubectl:
+    - kubectl:
         name: set deployment timeout
         server: $OKE_MASTER
         token: $OKE_TOKEN
