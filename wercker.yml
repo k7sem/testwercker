@@ -9,7 +9,7 @@ build:
         #name: Nose tests1
         #code: bin/tests1
         - wercker/maven:
-          goals: install
+          #goals: install
 
         # Take our tested application revision and its dependencies, bake it in to a
     # Docker image, and push to OCIR.
