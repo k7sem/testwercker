@@ -5,25 +5,25 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: hello_spring
+  name: hello-spring
   labels:
     commit: ${WERCKER_GIT_COMMIT}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hello_spring
+      app: hello-spring
   template:
     metadata:
       labels:
-        app: hello_spring
+        app: hello-spring
         commit: ${WERCKER_GIT_COMMIT}
     spec:
       containers:
-      - name: hello_spring-server
+      - name: hello-spring-server
         image: ${DOCKER_REPO}:${WERCKER_GIT_COMMIT}
         ports:
-        - name: hello_spring-server
+        - name: hello-spring-server
           containerPort: 8080
           protocol: TCP
       imagePullSecrets:
