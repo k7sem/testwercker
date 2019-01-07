@@ -41,6 +41,7 @@ deploy-to-kubernetes:
     - script:
         name: Prepare Kubernetes files
         code: |
+          rm -rf $WERCKER_OUTPUT_DIR/kubernetes
           mkdir $WERCKER_OUTPUT_DIR/kubernetes
           mv kubernetes_*.yml $WERCKER_OUTPUT_DIR/kubernetes
 
