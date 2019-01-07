@@ -1,16 +1,17 @@
-box: combient/java-mvn
+#box: combient/java-mvn
+box: maven:3.5.2-jdk-8
 build:
     steps:
 
     # Check that our application's tests are passing. Since this is a python
     # application, our entry script will also install the application's dependencies
     # with Virtualenv
-    - script:
-        name: Demo1 install
-        code: mvn install
+    #- script:
+    #    name: Demo1 install
+    #    code: mvn install
     #
-    #- wercker/maven:
-    #  goals: install
+    - wercker/maven:
+      goals: install
 
         # Take our tested application revision and its dependencies, bake it in to a
     # Docker image, and push to OCIR.
@@ -26,8 +27,8 @@ build:
             registry: https://iad.ocir.io/v2
 
 deploy-to-kubernetes:
-    #box: maven:3.5.2-jdk-8
-    box: combient/java-mvn
+    box: maven:3.5.2-jdk-8
+    #box: combient/java-mvn
     steps:
 
     # https://github.com/wercker/step-bash-template
