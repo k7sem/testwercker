@@ -22,6 +22,7 @@ spec:
       containers:
       - name: demo1-server
         image: ${DOCKER_REPO}:${WERCKER_GIT_COMMIT}
+        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
         ports:
         - name: demo1-server
           containerPort: 8081
