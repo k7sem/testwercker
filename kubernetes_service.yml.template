@@ -5,15 +5,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hello-spring
+  name: demo1
   labels:
-    app: hello-spring
+    app: demo1
     commit: ${WERCKER_GIT_COMMIT}
 spec:
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app: hello-spring
+    app: demo1
     commit: ${WERCKER_GIT_COMMIT}
   type: LoadBalancer
