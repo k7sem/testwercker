@@ -5,11 +5,12 @@ build:
     # Check that our application's tests are passing. Since this is a python
     # application, our entry script will also install the application's dependencies
     # with Virtualenv
-    - script:
+    #- script:
         #name: Nose tests1
         #code: bin/tests1
-        - wercker/maven:
-          #goals: install
+    #
+    - wercker/maven:
+      goals: install
 
         # Take our tested application revision and its dependencies, bake it in to a
     # Docker image, and push to OCIR.
